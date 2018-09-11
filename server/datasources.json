@@ -1,0 +1,8 @@
+{
+  "MongoDB": {
+    "name": "MongoDB",
+    "localStorage": "",
+    "file": "",
+    "connector": "memory"
+  }
+}
