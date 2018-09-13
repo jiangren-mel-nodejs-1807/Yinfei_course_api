@@ -1,0 +1,58 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Teacher": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Student": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Course": {
+    "dataSource": "db",
+    "public": true
+  },
+  "exam": {
+    "dataSource": "db",
+    "public": true
+  },
+  "enrol": {
+    "dataSource": "db",
+    "public": true
+  }
+}
