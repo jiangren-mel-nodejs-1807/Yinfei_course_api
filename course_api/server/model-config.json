@@ -47,11 +47,11 @@
     "dataSource": "db",
     "public": true
   },
-  "exam": {
+  "Exam": {
     "dataSource": "db",
     "public": true
   },
-  "enrol": {
+  "Enrol": {
     "dataSource": "db",
     "public": true
   }

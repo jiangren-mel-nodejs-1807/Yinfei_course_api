@@ -1,5 +1,5 @@
 {
-  "name": "exam",
+  "name": "Exam",
   "plural": "exams",
   "base": "PersistedModel",
   "idInjection": true,
@@ -21,7 +21,16 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "enrol": {
+      "type": "belongsTo",
+      "model": "Enrol",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
   "acls": [],
   "methods": {}
 }

@@ -13,7 +13,25 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "teacher": {
+      "type": "belongsTo",
+      "model": "Teacher",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "students": {
+      "type": "hasMany",
+      "model": "Student",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      },
+      "through": "enrol"
+    }
+  },
   "acls": [],
   "methods": {}
 }

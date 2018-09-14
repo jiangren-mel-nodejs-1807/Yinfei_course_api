@@ -1,5 +1,5 @@
 {
-  "name": "enrol",
+  "name": "Enrol",
   "plural": "enrols",
   "base": "PersistedModel",
   "idInjection": true,
@@ -13,7 +13,32 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "student": {
+      "type": "belongsTo",
+      "model": "Student",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "course": {
+      "type": "belongsTo",
+      "model": "Course",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "exams": {
+      "type": "hasMany",
+      "model": "Exam",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
   "acls": [],
   "methods": {}
 }
